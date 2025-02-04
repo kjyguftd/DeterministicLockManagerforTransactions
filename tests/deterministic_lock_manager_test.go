@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/cbthchbc/determisticExecution/common"
 	"github.com/cbthchbc/determisticExecution/proto_"
 	"github.com/cbthchbc/determisticExecution/scheduler"
@@ -44,9 +43,9 @@ func ThroughputTest(t *testing.T) {
 		}
 	}
 
-	elapsed := time.Since(start)
-	txnsPerSec := float64(100000) / elapsed.Seconds()
-	fmt.Printf("%.2f txns/sec\n", txnsPerSec)
+	//elapsed := time.Since(start)
+	//txnsPerSec := float64(100000) / elapsed.Seconds()
+	//fmt.Printf("%.2f txns/sec\n", txnsPerSec)
 }
 
 func TestThroughputTest(t *testing.T) {
